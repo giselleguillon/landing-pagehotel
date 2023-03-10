@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Hotel Villa paraíso</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <div class="imglogo"><img src="./imagenes/1.png" alt="logo" class="nav__img"></div>
+            </div>
+
+
+            <div class="navlinks">
+                <ul class="nav__lista">
+                    <li><a href="index.html" class="lista__link">Inicio</a></li>
+                    <li><a href="#galeria" class="lista__link">Galeria</a></li>
+                    <li><a href="#servicios" class="lista__link">Servicios</a></li>
+                    <li><a href="#sobrenosotros" class="lista__link">Sobre nosotros</a></li>
+                    <li><a href="#contacto" class="lista__link">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <label for="menu-toggle" class="label" >
+                    <i class="fas fa-bars"></i>
+                </label>
+                                
+                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                 <ul class="menu-toggle-lista">
+                    <li><a href="index.html" class="lista__link">Inicio</a></li>
+                    <li><a href="#galeria" class="lista__link">Galeria</a></li>
+                    <li><a href="#servicios" class="lista__link">Servicios</a></li>
+                    <li><a href="#sobrenosotros" class="lista__link">Sobre nosotros</a></li>
+                    <li><a href="#contacto" class="lista__link">Contacto</a></li>
+                 </ul>
+                
+                
+                
+
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada">
+   
+            <div class="container">
+                <div class="title">
+                    <h1>Hotel villa paraíso</h1>
+
+                </div>
+                <div class="container-button">
+                    <div class="button"><a href="registro.html">
+                            <p id="botonp">registrarse</p>
+                        </a></div>
+                    <div class="button"><a href="ingresar.html">
+                            <p id="botonp">ingresar</p>
+                        </a></div>
+                </div>
+             <div class="container-form">
+                <div class="container-form-button">
+                    <label for="fecha">
+                        <p>Fecha de llegada</p> 
+                    </label>
+                </div>
+                <div class="container-form-button">
+                    <input type="date" id="fecha" min="2023-01-01" max="2024-12-31">
+                </div>
+                <div class="container-form-button">
+                    <label for="fecha">
+                        <p>Fecha de salida</p> 
+                    </label>
+                </div>
+                <div class="container-form-button">
+                    <input type="date" id="fecha" min="2023-01-01" max="2024-12-31">
+                </div>
+                <div class="container-form-button">
+                    <label for="habitaciones">
+                        <p>Habitación</p> 
+                    </label>
+                </div>
+                <div class="container-form-button">
+                    <select name="habitaciones" id="habitaciones">
+                        <option value="doble">Doble</option>
+                        <option value="triple">Triple</option>
+                        <option value=" juniorsuite">Junior suite</option>
+                        <option value="suite">Suite</option>
+                        <option value="">Presidencial</option>
+                        <input type="submit" value="buscar">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="galeria__titulo">
+                <h2>Galeria</h2>
+            </div>
+            <div class="galeria">
+                <div class="galeriafotos1">
+                    <div class="fotos"><img src="./imagenes/galeria1.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria2.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria3.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria4.png" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria5.jpg" alt="fotos"></div>
+                </div>
+                <div class="galeriafotos2">
+                    <div class="fotos"><img src="./imagenes/galeria6.jpg.crdownload" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria7.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria8.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria9.jpg" alt="fotos"></div>
+                    <div class="fotos"><img src="./imagenes/galeria10.jpg" alt="fotos"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="servicios">
+            <div class="titulo__servicios">
+                <h2>Servicios</h2>
+            </div>
+            <div class="servicios__container">
+                <div class="servicios">
+                    <img src="./imagenes/servicios1.png" alt="servicios" class="servicios__img">
+                    <p class="servicios__p">Piscina climatizada</p>
+                </div>
+                <div class="servicios"><img src="./imagenes/servicios2.png" alt="servicios" class="servicios__img">
+                    <p class="servicios__p"> Tenemos tres tipos de restaurant</p>
+                </div>
+                <div class="servicios"><img src="./imagenes/servicios3.png" alt="servicios" class="servicios__img">
+                    <p class="servicios__p"> Servicio de spa</p>
+                </div>
+                <div class="servicios"><img src="./imagenes/servicios4.png" alt="servicios" class="servicios__img">
+                    <p class="servicios__p">Gimnasio</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="sobrenosotros">
+            <div class="sobrenosotros__h2">
+                <h2>Sobre nosotros</h2>
+            </div>
+            <div class="sobrenosotros__p">
+                <p>Villa paraíso es un hotel 5 estrellas all inclusive, contamos con más de 15 años de experiencia en
+                    servicio al público. Nuestro hotel es uno de los mejores que se pueden encontrar en Punta Cana,
+                    contamos con dos piscinas exteriores con vista al mar y una interna climatizada, Nuestros
+                    restaurantes estan dirigidos por los mejores chef y cocineros especializados en comida
+                    internacional. </p>
+            </div>
+        </section>
+
+
+
+        <section id="contacto">
+            <div class="titulo">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contacto__info">
+                <div class="contacto__info-form">
+                    <div class="titulo_form">
+                        <h3>Envianos tu consulta:</h3>
+                    </div><br>
+                    <form action="x" class="form">
+                        <div class="form"><label for="nombre">Nombre:</label>
+                            <input class="form" ut type="text" id="nombre" required>
+                        </div>
+                        <div class="form"><label for="mail">Mail:</label>
+                            <input class="form" ut type="email" id="mail" required>
+                        </div>
+                        <div class="form"><label for="consulta">Consulta:</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="boton"><button>Enviar</button></div>
+                    </form>
+                </div>
+                <div class="contacto__info-mapa"> 
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241952.79056533182!2d-68.61143032313916!3d18.
+            64099096700957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x8ea891645dcbfe77%3A0x61881cfaed12f6f3!2sPunta%20Cana%2C%20Rep%C3%BAblica%20Dominicana!5e0!3m2!1ses-419!2sar!4v1676916699005!5m2!1ses-419!2sar" width="auto" 
+            height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    
+                </div>
+            </div>
+            <div class="contacto__redes">
+                <div class="redes"><img src="./imagenes/icono1.png" alt="redes" class="redes_img">
+                    <div class="redes_p">
+                        <p>Seguinos en tik tok: hotelparaiso88</p>
+                    </div>
+                </div>
+                <div class="redes"><img src="./imagenes/icono2.png" alt="redes" class="redes_img">
+                    <div class="redes_p">
+                        <p>hotelparaísoinfo@gmail.com <br> hotelparaísoreservas@gmail.com</p>
+                    </div>
+                </div>
+                <div class="redes"><img src="./imagenes/icono3.png" alt="redes" class="redes_img">
+                    <div class="redes_p">
+                        <p>1515155555 <br>1665852222</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>

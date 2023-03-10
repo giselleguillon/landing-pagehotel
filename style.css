@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+:root{
+    --azulado: rgba(70,141,215,1);
+    --marron:rgb(133, 93, 19);
+    --celeste:rgb(134, 218, 243);
+    --azuloscuro:rgb(16, 16, 107);
+    --azul: rgb(84, 84, 167);
+
+}
+body{
+    background-color: var(--azuloscuro);
+}
+.header{
+    width: 100%;
+    height: 3rem;
+}
+
+.nav__logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   
+}
+.navlinks{
+    display: none;
+}
+.nav__img{
+    height: 3rem;
+    width: 3rem;
+
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.titulologo{
+    font-size: 5px;
+    color: white;
+}
+
+.menu-toggle-lista{
+    display:block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 40px;
+    list-style: none;
+    background-color: var(--azuloscuro);
+    width: 90%;
+    height: 300px;
+    left: 5%;
+    right: 5%;
+    z-index: 2;
+    border: solid 2px var(--celeste);
+    border-top: 0;
+    border-radius: 10px;
+    display:none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+
+.menu-toggle-lista li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.lista__link{
+    color: aliceblue;
+}
+
+.label{
+    color: aliceblue;
+}
+
+#menu-toggle:checked + .menu-toggle-lista{
+    display: block;
+}
+
+
+
+/* portada */
+.container-form{
+    display: none;
+}
+.portada{
+    background-image: url(./imagenes/portada.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+}
+
+.container-button{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: var(--marron);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.button p{
+    color: aliceblue;
+}
+
+
+/* galeria */
+
+.fotos img{
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    box-shadow: 0 10px 20px ;
+    transition: all 300ms;
+    gap: 40px;
+    
+}
+.fotos img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.galeria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fotos{
+    padding: 20px;
+}
+.galeriafotos2{
+    display: none;
+}
+
+.galeria__titulo h2{
+color: aliceblue;
+}
+
+.galeria__titulo{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+
+/* section servicios */
+
+
+.servicios__container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+
+}
+
+.servicios__img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: solid var(--celeste);
+    background: linear-gradient(0deg,rgba(70,141,215,1) 50%, rgba(70,230,217,1) 100%);
+}
+
+.titulo__servicios{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios{
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px ;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.servicios__p{
+   width: 200px;
+   height: 100px;
+   margin-top: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+color: aliceblue;
+  
+  
+}
+
+.titulo__servicios h2{
+    color: aliceblue;
+}
+
+/* section sobre nosotros */
+
+
+#sobrenosotros{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+ }
+ .sobrenosotros__h2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+ }
+ .sobrenosotros__p{
+    width: 100%;
+    height: auto;
+    margin: 50px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .sobrenosotros__p p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5% 10%;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--celeste);
+ }
+
+
+
+ /* contacto */
+
+#contacto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+
+.mapa{
+    height: 50%;
+    width: 50%;
+  
+
+
+}
+
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.contacto__info-form{
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.titulo_form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    color: aliceblue;
+}
+
+
+.boton button{
+   
+    background-color: var(--celeste);
+width: 100px;
+height: 50px;
+font-size: 15px;
+border-radius: 10px;
+border-color: var(--azuloscuro);
+color: var(--azuloscuro);
+
+    
+}
+
+.boton button:hover{
+    color: var(--celeste);
+border-color:var(--celeste);
+background-color: var(--azuloscuro);
+}
+.contacto__redes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.redes{
+    width: 30%;
+    height: auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.redes_img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.redes_p{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .contacto__info-mapa{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
