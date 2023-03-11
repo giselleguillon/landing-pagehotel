@@ -448,6 +448,138 @@ iframe{
    }
    
 
+
+   /* registro */
+
+
+.registro{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 200px;
+    background-color: rgb(122, 177, 224);
+    padding: 20px;
+
+
+}
+
+.registro h2{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px;
+}
+
+
+  
+.formulario{
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 5px;
+    color: var(--azuloscuro);
+}
+
+
+.registro__form{
+    padding: 10px;
+}
+
+.registro__form-boton{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+   }
+
+
+.registro__form-boton button{
+    background-color: var(--celeste);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: var(--azuloscuro);
+    color: var(--azuloscuro);
+
+}
+
+
+.registro__form-boton button:hover{
+    
+    color: var(--celeste);
+    border-color:var(--celeste);
+    background-color: var(--azuloscuro);
+
+}
+
+
+
+
+/* ingreso */
+
+.ingreso{
+    width: 100%;
+    height: 850px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(122, 177, 224) ;
+}
+
+.ingreso h2{
+   width: 100%;
+   height: 50px;
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center ;
+}
+
+
+.ingreso__form{
+    border: solid 2px;
+border-radius: 15px;
+padding: 5px;
+color: var(--azuloscuro);
+
+}
+
+.form{
+    padding: 10px;
+}
+
+.ingreso__form-boton{
+    padding: 10px;
+display: flex;
+justify-content: center;
+}
+
+
+.ingreso__form-boton {
+background-color: var(--celeste);
+width: 150px;
+height: 50px;
+font-size: 20px;
+border-radius: 10px;
+border-color:  var(--azuloscuro);
+color:  var(--azuloscuro);
+}
+
+.ingreso__form-boton:hover{
+    color: var(--celeste);
+border-color:var(--celeste);
+background-color: var(--azuloscuro);
+}
+
+
    
    
    

@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/
 bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <title>registrarme</title>
+    <title>registrarse</title>
 </head>
 <body>
+
     <header class="header">
         <nav class="nav">
             <div class="nav__logo">
                 <div class="imglogo"><img src="./imagenes/1.png" alt="logo" class="nav__img"></div>
+                <div class="titulologo">
+                    <h1>Hotel villa paraíso</h1>
+                </div>
             </div>
             <div class="navlinks">
                 <ul class="nav__lista">
@@ -45,48 +48,25 @@ bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             </div>
         </nav>
     </header>
-
-
     
-
     <main>
-        <section class="registro">
-            <h2>Complete los siguientes datos para registrarse</h2>
-            <form action="x" class="formulario">
-                <div class="registro__form">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" required>
-                </div class="registro__form">
-                <div class="registro__form">
+        <section class="ingreso">
+            <h2>ingresar:</h2>
+            <form action="x" class="ingreso__form">
+                <div class="form">
                     <label for="mail">Mail:</label>
                     <input type="email" id="mail" required>
                 </div>
-                <div class="registro__form">
-                    <label for="dni">Documento:</label>
-                    <input type="number" id="dni" required>
-                </div>
-                <div class="registro__form">
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" max="2004-12-1" required>
-                </div>
-                <div class="registro__form">
-                    <label for="telefono">Telefono</label>
-                    <input type="number" id="telefono" required >
-                </div>
-                <div class="registro__form">
-                    <label for="contraseña">Contraseña</label>
+                <div class="form">
+                    <label for="contraseña">Contraseña:</label>
                     <input type="password" id="contraseña" required>
                 </div>
-                <div class="registro__form">
-                    <label for="acepto">Acepto recibir informacion y novedades por mail</label>
-                    <input type="checkbox" required>
-                </div>
-                <div class="registro__form-boton">
-                    <button>Registrarme</button>
+                <div class="form">
+                    <button class="ingreso__form-boton">Ingresar</button>
                 </div>
             </form>
+
         </section>
     </main>
-    
 </body>
 </html>
