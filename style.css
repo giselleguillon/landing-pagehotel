@@ -11,7 +11,7 @@
     --azulado: rgba(70,141,215,1);
     --marron:rgb(133, 93, 19);
     --celeste:rgb(134, 218, 243);
-    --azuloscuro:rgb(16, 16, 107);
+    --azuloscuro:rgb(11, 11, 65);
     --azul: rgb(84, 84, 167);
 
 }
@@ -60,7 +60,7 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 40px;
+    margin-top: 10px;
     list-style: none;
     background-color: var(--azuloscuro);
     width: 90%;
@@ -169,9 +169,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.fotos{
-    padding: 20px;
-}
+
+
+
 .galeriafotos2{
     display: none;
 }
@@ -323,7 +323,7 @@ color: aliceblue;
 }
 
 .contacto__info-form{
-    width: 100%;
+    width: 300px;
     height: 500px;
     margin: 10px;
     color: aliceblue;
@@ -370,8 +370,8 @@ background-color: var(--azuloscuro);
 
 
 iframe{
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
 }
 .contacto__info-mapa{
     display: flex;
@@ -404,6 +404,7 @@ iframe{
     padding-top:10px;
     border-radius: 15px;
     margin: 10px;
+    gap: 10px;
 }
 
 .redes_img{
@@ -441,6 +442,7 @@ iframe{
 }
    .footer p{
     color: aliceblue;
+    text-align: center;
    }
    
    .footer_link p{
@@ -582,6 +584,194 @@ background-color: var(--azuloscuro);
 
    
    
+   /* mediaquery */
+
+   @media (min-width: 576px) {
+
+    .contacto__redes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer{
+        flex-direction: row;
+        gap: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .contacto__info{
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 50px;
+    }
+    
+    @media (min-width: 992px) {
+
+        main{
+            padding: 0 5%;
+        }
+
+
+    .label {
+        display: none;
+    }
+    
+    .navlinks{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+       
+
+    }
+    .nav__lista{
+        display: flex;
+        gap: 40px;
    
+        
+
+    }
+
+    .portada{
+        height: 700px;
+    }
+
+   .button{
+    width: 8rem;
+    height: 4rem;
+
+   }
+
+   .button p{
+    font-size: 20px;
+   }
+
+   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+    .container-button{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    
+    }
+    
+    
+    .button{
+        width: 120px;
+        height: 40px;
+        background-color: var(--marron);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 30px;
+        padding: 20px 100px;
+        border: 20px;
+        border-radius: 10px;
+       
+       
+    }
+    
+    
+    #botonp{
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    .container-form{
+        background-color: var(--marron);
+        width: 800px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items:center ;
+        border-radius: 20px;
+       
+        
+    }
+    
+    .container-form p{
+        color: white;
+    }
+    
+   }
+   .galeria{
+    flex-direction: row;
+   }
+    
+
+   .fotos img{
+    width: 300px;
+    height: 300px;
+   }
+
+    
+
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header{
+        height: 4rem;
+    }
+    .nav__img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .nav__logo{
+        margin-top: 20px;
+    }
+
+    .lista__link{
+        font-size: 20px;
+    }
+
+   
+    .contacto__info{
+        justify-content: center;
+        gap: 300px;
+    }
+
+
+}
+
+.redes_img{
+    width: 50px;
+    height: 50px;
+
+}
+
+.redes_p{
+    font-size: 20px;
+}
+
+.redes{
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.footer_link{
+    font-size: 20px;
+}
+
+   
+
+
+    
+    
+}
    
    
