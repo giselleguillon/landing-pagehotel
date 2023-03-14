@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 
@@ -127,8 +127,9 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 5%;
-    color: aliceblue;
+    color: rgb(39, 118, 187);
     font-family:'Dancing Script',cursive;
+    font-size: 20px;
 }
 .button{
     width: 6rem;
@@ -712,6 +713,10 @@ background-color: var(--azulado);
 
 @media (min-width: 768px) {
 
+    .title{
+        font-size: 40px;
+    }
+
     .contacto__info{
         flex-direction: row;
         justify-content: space-between;
@@ -877,7 +882,8 @@ background-color: var(--azulado);
     
     .redes{
         flex-direction: row;
-        gap: 20px;
+        justify-content: space-around;
+        
     }
     
     
