@@ -128,7 +128,7 @@ body{
     justify-content: center;
     padding-top: 5%;
     color: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Dancing Script',cursive;
 }
 .button{
     width: 6rem;
@@ -147,6 +147,10 @@ body{
 
 /* galeria */
 
+#galeria{
+    margin:  50px;
+}
+
 .fotos1{
     position: relative;
     display: inline-block;
@@ -160,10 +164,6 @@ body{
     gap: 40px;
 }
 
-.fotos1 img:hover{
-    transform: scale(1.3);
-  
-}
 
 
 .fotos1 h3{
@@ -201,10 +201,7 @@ body{
     gap: 40px;
 }
 
-.fotos2 img:hover{
-    transform: scale(1.3);
-  
-}
+
 
 
 .fotos2 h3{
@@ -243,10 +240,6 @@ body{
     gap: 40px;
 }
 
-.fotos3 img:hover{
-    transform: scale(1.3);
-  
-}
 
 
 .fotos3 h3{
@@ -280,12 +273,14 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 50px;
+    
 }
 
 
 
 
 .galeria__titulo h2{
+
 color: aliceblue;
 }
 
